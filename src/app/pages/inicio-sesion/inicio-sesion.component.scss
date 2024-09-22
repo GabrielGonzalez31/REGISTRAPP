@@ -1,17 +1,30 @@
-.custom-content {
+.contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: #995151; /* Color de fondo */
+  background-color: #0f5c6b;
+  overflow: hidden;
 }
 
-.titulo{
-  color: rgb(0, 230, 191);
+.titulo_card{
+  color: #0f5c6b;
+  font-size: bolder;
 }
 
-.con{
-  background-color: rgb(175, 64, 64);
-  padding: 20px;
-  border-radius: 10px;
+.card{
+  border-radius: 15px;
 }
+
+.contenedor_radio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 15px;
+}
+.seleccion_radio{
+  align-items: center;
+  margin-right: 20px;
+}
+

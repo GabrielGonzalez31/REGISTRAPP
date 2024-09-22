@@ -17,6 +17,7 @@ export const usuarios: Usuario[] = [
     clave: '123456',
     facultad: 'Salud',
     carrera: 'Quimica y Farmacia'
+
   },
   {
     rut: '12.932.824-9',

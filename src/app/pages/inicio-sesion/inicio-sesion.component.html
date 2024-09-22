@@ -1,47 +1,40 @@
-<!-- <ion-content>
-  <app-header></app-header>
-  <ion-card style="margin-top: 100px;">
-    <ion-card-header>
-      <ion-card-title>Login</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form action="">
-        <ion-item>
-          <ion-input [(ngModel)]="nombre" name="nombre" label="Nombre" labelPlacement="floating" placeholder="Nombre"></ion-input>
-        </ion-item>
-
-        <ion-item>
-          <ion-input label="Contraseña" labelPlacement="floating" type="password"></ion-input>
-        </ion-item>
-      </form>
-
-      <ion-button (click)="guardarNombre()" [routerLink]="['/']">Ingresar</ion-button>
-
-      <ion-button [routerLink]="['/restablecer']">Restablecer contraseña</ion-button>
-
-    </ion-card-content>
-  </ion-card> -->
-
 <ion-content>
+  <app-header></app-header>
+  <div class="contenedor">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title class="titulo_card">Login</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Login</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-input [(ngModel)]="correo" label="Correo" labelPlacement="floating" placeholder="Correo"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="correo" label="Correo" labelPlacement="floating" placeholder="Correo"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-input [(ngModel)]="clave" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="clave" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
+        </ion-item>
 
-      <ion-button (click)="login(correo, clave)">Iniciar sesión</ion-button>
+        <ion-button class="btn-iniciar" (click)="login(correo, clave)">Iniciar sesión</ion-button>
 
-      <ion-text color="danger" *ngIf="loginFailed">
-        Usuario o clave incorrectos.
-      </ion-text>
-    </ion-card-content>
-  </ion-card>
+        <div>
+          <ion-radio-group class="contenedor_radio" [allowEmptySelection]="true">
+            <ion-radio value="alumno" class="seleccion_radio">Alumno</ion-radio>
+            <ion-radio value="docente" class="seleccion_radio">Docente</ion-radio>
+          </ion-radio-group>
+        </div>
+
+
+
+
+
+
+
+        <ion-text color="danger" *ngIf="loginFailed">
+          Usuario o clave incorrectos.
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
 </ion-content>
