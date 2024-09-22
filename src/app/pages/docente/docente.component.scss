@@ -1,0 +1,21 @@
+.con{
+  margin-top: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+.btns {
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Define 2 columnas iguales */
+    gap: 10px; /* Espacio entre los botones */
+    width: 100%; /* Ajusta el ancho para que se alineen correctamente */
+    padding: 20px; /* Ajusta el espacio alrededor */
+}
+
+ion-button {
+    width: 100%; /* Cada botón ocupará el 100% de su celda */
+}
+
+.title {
+  text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
+  width: 100%; /* Asegúrate de que ocupe todo el ancho */
+}

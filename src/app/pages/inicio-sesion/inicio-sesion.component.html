@@ -15,20 +15,14 @@
           <ion-input [(ngModel)]="clave" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
         </ion-item>
 
-        <ion-button class="btn-iniciar" (click)="login(correo, clave)">Iniciar sesión</ion-button>
-
         <div>
-          <ion-radio-group class="contenedor_radio" [allowEmptySelection]="true">
+          <ion-radio-group class="contenedor_radio" [allowEmptySelection]="true" #ocupacion (ionChange)="guardarOcupacion(ocupacion.value)">
             <ion-radio value="alumno" class="seleccion_radio">Alumno</ion-radio>
             <ion-radio value="docente" class="seleccion_radio">Docente</ion-radio>
           </ion-radio-group>
         </div>
 
-
-
-
-
-
+        <ion-button class="btn-iniciar" (click)="login(correo, clave)">Iniciar sesión</ion-button>
 
         <ion-text color="danger" *ngIf="loginFailed">
           Usuario o clave incorrectos.

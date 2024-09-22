@@ -9,6 +9,8 @@ export class AuthService {
 
   constructor() { }
 
+
+
    //para mostrar el estado del login
    private isAuthenticatedSubject = new BehaviorSubject<boolean>(false); // Para mostrar el estado del login
    isAuthenticated$ = this.isAuthenticatedSubject.asObservable(); // Para mostrar el estado del login
