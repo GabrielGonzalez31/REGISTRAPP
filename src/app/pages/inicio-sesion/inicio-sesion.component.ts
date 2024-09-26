@@ -35,6 +35,13 @@ export class InicioSesionComponent  implements OnInit {
     this.isLoading = true; // Activar el estado de carga
     this.loginFailed = false; // Resetear el estado de loginFailed al iniciar sesión
 
+    setTimeout(() => {
+      // Aquí debes manejar la respuesta de tu API
+      this.isLoading = false; // Desactivar el spinner
+      this.loginFailed = true; // Simular fallo en el login
+  }, 2000)
+
+  
     const isAuthenticated = await this.authService.buscarUsuario(correo, clave); // Esperar a que se complete la autenticación
     this.isLoading = false; // Desactivar el estado de carga una vez que la autenticación termine
 

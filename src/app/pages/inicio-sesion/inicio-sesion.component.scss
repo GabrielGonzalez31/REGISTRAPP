@@ -1,9 +1,10 @@
 .contenedor {
+  background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-verde-oscuro_1107-162.jpg?t=st=1727295382~exp=1727298982~hmac=21562aae9c5be022388a39ce5bf00a01a5bee6e682eabe30dea2cbf7b7bb24c8&w=826');
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
   height: 100%;
-  background-color: #0f5c6b;
   overflow: hidden;
 }
 
@@ -62,9 +63,16 @@
   background-color: #0f5c6b ;
   color: #ffffff;
   margin-top: 7px;
-  transition: margin-top 0.3s ease;
+  transition: margin-top 0.5s ease;
 }
 
 .btn-iniciar.hidden {
   margin-top: 0;
+}
+
+
+.spinner{
+
+
+  margin-left: 15px;
 }
