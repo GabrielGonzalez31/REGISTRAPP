@@ -1,0 +1,48 @@
+.contenedor {
+  background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-verde-oscuro_1107-162.jpg?t=st=1727295382~exp=1727298982~hmac=21562aae9c5be022388a39ce5bf00a01a5bee6e682eabe30dea2cbf7b7bb24c8&w=826');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  padding: 16px;
+  overflow: hidden;
+
+}
+
+.button-container {
+  margin-top: 50px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 400px; // Limitar el ancho del perfil
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave para el perfil
+}
+
+.title {
+  font-size: 24px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center; // Centrar el nombre del usuario
+  margin-bottom: 16px; // Espacio entre el título y el contenido
+}
+
+.profile-info {
+  ion-item {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  ion-label {
+    display: flex;
+    justify-content: space-between; // Justificar el texto entre etiqueta y valor
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,45 @@
+.contenedor {
+  background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-verde-oscuro_1107-162.jpg?t=st=1727295382~exp=1727298982~hmac=21562aae9c5be022388a39ce5bf00a01a5bee6e682eabe30dea2cbf7b7bb24c8&w=826');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.titulo_card{
+  color: #ffffff;
+  font-size: bolder;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card{
+  border-radius: 15px;
+  width: 300px; /* Ancho fijo de la tarjeta */
+  height: 350px; /* Alto fijo de la tarjeta (opcional) */
+}
+
+.contenedor-boton {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-restablecer {
+
+  border-radius: 15px;
+  background-color: #0f5c6b ;
+  color: #ffffff;
+  margin-top: 15px;
+  transition: margin-top 0.5s ease;
+}
+
+.btn-restablecer.hidden {
+  margin-top: 0;
+}

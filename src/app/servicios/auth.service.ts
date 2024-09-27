@@ -17,6 +17,15 @@ export class AuthService {
    private usuarioSubject = new BehaviorSubject<string>(''); // Para mostrar el nombre del usuario actualmente logueado  // Para mostrar el nombre del usuario
    usuario$ = this.usuarioSubject.asObservable(); // Para mostrar el nombre del usuario actualmente logueado
 
+   private tipoSubject = new BehaviorSubject<string>(''); // Para mostrar el nombre del usuario actualmente logueado  // Para mostrar el nombre del usuario
+   tipo$ = this.tipoSubject.asObservable();
+
+   private carreraSubject = new BehaviorSubject<string>(''); // Para mostrar el nombre del usuario actualmente logueado  // Para mostrar el nombre del usuario
+   carrera$ = this.carreraSubject.asObservable();
+
+   private facultadSubject = new BehaviorSubject<string>(''); // Para mostrar el nombre del usuario actualmente logueado  // Para mostrar el nombre del usuario
+   facultad$ = this.facultadSubject.asObservable();
+
    // Agregar un BehaviorSubject para el estado de loginFailed
    private loginFailedSubject = new BehaviorSubject<boolean>(false); // Para mostrar si falló la autenticación
    loginFailed$ = this.loginFailedSubject.asObservable(); // Para mostrar si falló la autenticación
@@ -32,6 +41,9 @@ export class AuthService {
           this.tipo = usuarioEncontrado.tipo;
           this.isAuthenticatedSubject.next(true); // Activar el estado de autenticación si la autenticación es correcta.
           this.usuarioSubject.next(usuarioEncontrado.nombreCompleto); // Actualizar el nombre completo del usuario autenticado.
+          this.tipoSubject.next(usuarioEncontrado.tipo);
+          this.carreraSubject.next(usuarioEncontrado.carrera);
+          this.facultadSubject.next(usuarioEncontrado.facultad);
           this.loginFailedSubject.next(false); // Restablecer loginFailed a false
           resolve(true); // Resuelve la promesa como `true` si la autenticación es exitosa
         } else {

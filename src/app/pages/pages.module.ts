@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AlumnoComponent } from './alumno/alumno.component';
 import { DocenteComponent } from './docente/docente.component';
+import { AsignaturasCursosComponent } from './asignaturas-cursos/asignaturas-cursos.component';
+import { CamaraQrComponent } from './camara-qr/camara-qr.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { DocenteComponent } from './docente/docente.component';
     InicioSesionComponent,
     RestablecerContraComponent,
     AlumnoComponent,
-    DocenteComponent
+    DocenteComponent,
+    AsignaturasCursosComponent,
+    CamaraQrComponent,
+    PerfilComponent
   ],
   imports: [
     CommonModule,
