@@ -3,14 +3,18 @@
 </ion-header>
 
 <ion-content>
-    <ion-toolbar class="con">
-      <ion-title class="title">BIENVENIDO {{nombre}}</ion-title>
-    </ion-toolbar>
+  <div class="contenedor">
 
 
-  <div class="button-container">
-    <ion-button [routerLink]="['/']">Restablecer contraseña</ion-button>
-    <ion-button [routerLink]="['/']">Cursos/Secciones</ion-button>
-    <ion-button [routerLink]="['/']">Generar QR</ion-button>
+    <ion-title class="title">BIENVENIDO {{nombre}}</ion-title>
+
+
+
+    <div class="button-container">
+      <ion-button class="btns" [routerLink]="['/']">Restablecer contraseña</ion-button>
+      <ion-button class="btns" [routerLink]="['/']">Cursos/Secciones</ion-button>
+      <ion-button class="btns" [routerLink]="['/']">Generar QR</ion-button>
+    </div>
+
   </div>
 </ion-content>
