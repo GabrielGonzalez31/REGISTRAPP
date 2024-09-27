@@ -9,8 +9,7 @@ export class AuthService {
 
   constructor() { }
 
-
-
+  tipo: string;
    //para mostrar el estado del login
    private isAuthenticatedSubject = new BehaviorSubject<boolean>(false); // Para mostrar el estado del login
    isAuthenticated$ = this.isAuthenticatedSubject.asObservable(); // Para mostrar el estado del login
@@ -29,7 +28,8 @@ export class AuthService {
           u => u.correo === correo && u.clave === clave // Revisar si el usuario y la clave coinciden con los datos de un usuario
         );
 
-        if (usuarioEncontrado) { // Si el usuario y la clave coinciden con los datos de un usuario, activar
+        if (usuarioEncontrado) {// Si el usuario y la clave coinciden con los datos de un usuario, activar
+          this.tipo = usuarioEncontrado.tipo;
           this.isAuthenticatedSubject.next(true); // Activar el estado de autenticación si la autenticación es correcta.
           this.usuarioSubject.next(usuarioEncontrado.nombreCompleto); // Actualizar el nombre completo del usuario autenticado.
           this.loginFailedSubject.next(false); // Restablecer loginFailed a false
@@ -39,7 +39,7 @@ export class AuthService {
           this.loginFailedSubject.next(true); // Establecer loginFailed a true si falla la autenticación
           resolve(false); // Resuelve la promesa como `false` si la autenticación falla
         }
-      }, 4000); // Retraso de 4000 ms = 4 segundos
+      }, 2000); // Retraso de 4000 ms = 4 segundos
     });
   }
 }

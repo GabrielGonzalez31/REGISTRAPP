@@ -5,4 +5,5 @@ export interface Usuario {  // Interface para los usuarios
   clave: string;
   facultad: string;
   carrera: string;
+  tipo: string;
 }

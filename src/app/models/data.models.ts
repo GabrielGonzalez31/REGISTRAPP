@@ -8,31 +8,35 @@ export const usuarios: Usuario[] = [
     correo: 'admin',
     clave: 'admin',
     facultad: 'Informatica y Telecommunicaciones',
-    carrera: 'Ingeniería en Informática'
+    carrera: '',
+    tipo: 'Docente'
   },
   {
     rut: '23.434.544-3',
     nombreCompleto: 'Yulied Quintero',
-    correo: 'yaquintero25@gmail.com',
+    correo: 'yulied@gmail.com',
     clave: '123456',
     facultad: 'Salud',
-    carrera: 'Quimica y Farmacia'
+    carrera: 'Quimica y Farmacia',
+    tipo :'Alumno'
 
   },
   {
     rut: '12.932.824-9',
-    nombreCompleto: 'Daniel Gonzalez',
-    correo: 'danielgonzalez@duocuc.cl',
+    nombreCompleto: 'Andres Saldivar',
+    correo: 'andres@duocuc.cl',
     clave: '123456',
     facultad: 'Salud',
-    carrera: 'Preparador Físico'
+    carrera: '',
+    tipo: 'Docente'
   },
   {
     rut: '23.934.849-0',
     nombreCompleto: 'Gabriel Gonzalez',
-    correo: 'gaj.goznalez@gmail.com',
+    correo: 'gabriel@gmail.com',
     clave: '123456',
     facultad: 'Informatica y Telecommunicaciones',
-    carrera: 'Analista Programador Computacional'
+    carrera: 'Analista Programador Computacional',
+    tipo: 'Alumno'
   }
 ];

@@ -8,7 +8,6 @@ import { IonicModule } from '@ionic/angular';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { RegistroComponent } from './registro/registro.component';
 import { AlumnoComponent } from './alumno/alumno.component';
 import { DocenteComponent } from './docente/docente.component';
 
@@ -17,7 +16,6 @@ import { DocenteComponent } from './docente/docente.component';
   declarations: [
     InicioSesionComponent,
     RestablecerContraComponent,
-    RegistroComponent,
     AlumnoComponent,
     DocenteComponent
   ],
