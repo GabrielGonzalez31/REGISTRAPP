@@ -16,18 +16,18 @@
 
 .profile-card {
   width: 100%;
-  max-width: 400px; // Limitar el ancho del perfil
+  max-width: 400px;
   padding: 20px;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave para el perfil
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {
   font-size: 24px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center; // Centrar el nombre del usuario
-  margin-bottom: 16px; // Espacio entre el título y el contenido
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .profile-info {
@@ -41,7 +41,7 @@
 
   ion-label {
     display: flex;
-    justify-content: space-between; // Justificar el texto entre etiqueta y valor
+    justify-content: space-between;
     font-weight: 400;
     font-size: 18px;
   }

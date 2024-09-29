@@ -1,5 +1,9 @@
-<ion-content>
+<ion-header>
   <app-header></app-header>
+</ion-header>
+
+<ion-content>
+
   <div class="contenedor">
     <ion-card class="card">
       <ion-card-header>
@@ -12,12 +16,12 @@
         </ion-item>
 
         <ion-item>
-          <ion-input label="Contraseña" labelPlacement="floating" type="password"></ion-input>
+          <ion-input label="Nueva Contraseña" labelPlacement="floating" type="password"></ion-input>
         </ion-item>
 
 
         <div class="contenedor-boton">
-          <ion-button class="btn-restablecer" color="custom"  >
+          <ion-button [routerLink]="['/iniciosesion']" class="btn-restablecer" color="custom">
             Restablecer
           </ion-button>
         </div>

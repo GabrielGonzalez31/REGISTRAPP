@@ -17,28 +17,25 @@
 .btns {
   --color : white;
   --background: #0f5c6b;
-  display: grid; /* Usa grid layout */
-  gap: 5px; /* Espacio entre los botones */
-  width: 300px; /* Ajusta el ancho de los botones */
-  padding: 20px; /* Ajusta el espacio alrededor */
-  margin: 0 auto; /* Centra el contenedor en su padre */
-  justify-items: center; /* Centra cada botón en su celda */
-  font-family: JetBrains Mono, Arial, sans-serif; /* Fuente personalizada */
+  display: grid;
+  gap: 5px;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  justify-items: center;
+  font-family: JetBrains Mono, Arial, sans-serif;
 }
 
-
-
 ion-button {
-
-    width: 100%; /* Cada botón ocupará el 100% de su celda */
+    width: 100%;
 }
 
 .title {
-  font-size: 30px; /* Tamaño de fuente */
+  font-size: 30px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 250px;
-  text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
-  width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  text-align: center;
+  width: 100%;
 }
 
 .button-container {

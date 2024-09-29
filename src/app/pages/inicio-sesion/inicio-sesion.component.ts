@@ -12,8 +12,8 @@ import { DatosPersonalesService } from 'src/app/servicios/datos-personales.servi
 })
 export class InicioSesionComponent  implements OnInit {
 
-  correo: string = ''; // Campo de entrada para el usuario
-  clave: string = ''; // Campos de entrada para el usuario y clave
+  correo: string = ''; // variable para el correo del usuario
+  clave: string = ''; // variable para la clave del usuario
 
   private usuario = inject(AuthService); //Obtener el servicio auth
   private authService = inject(AuthService);  // Obtener el servicio de autenticación
@@ -28,7 +28,7 @@ export class InicioSesionComponent  implements OnInit {
   }
 
   isLoading: boolean = false; // Variable para mostrar el estado de carga
-  async login(correo: string, clave: string): Promise<void> { // Simular la autenticación con un retraso de 4 segundos
+  async login(correo: string, clave: string): Promise<void> { // Simular la autenticación con un retraso de 2 segundos
     this.isLoading = true; // Activar el estado de carga
     this.loginFailed = false; // Resetear el estado de loginFailed al iniciar sesión
 
@@ -39,10 +39,10 @@ export class InicioSesionComponent  implements OnInit {
       this.correo = ''; // Limpiar el campo de usuario
       this.clave = ''; // Limpiar el campo de clave
       if(this.usuario.tipo === 'Docente'){
-        this.router.navigate(['/docente']);
+        this.router.navigate(['/docente']); // Redirigir al usuario si el login es exitoso y a su respectiva pantalla
       }
       if(this.usuario.tipo === 'Alumno'){
-        this.router.navigate(['/alumno']); // Redirigir al usuario si el login es exitoso
+        this.router.navigate(['/alumno']); // Redirigir al usuario si el login es exitoso y a su respectiva pantalla
       }
 
     } else {

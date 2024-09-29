@@ -10,7 +10,7 @@ import { AuthService } from 'src/app/servicios/auth.service';
 })
 export class HeaderComponent  implements OnInit {
 
-  usuario: string; // Campo para almacenar el nombre del usuario
+  usuario: string; // variable para almacenar el nombre del usuario
   private authService = inject(AuthService); // Obtener el servicio de autenticación
 
   subscriptionDatosPersonales: Subscription; // Subscripción para el observable del nombre del usuario
@@ -21,7 +21,7 @@ export class HeaderComponent  implements OnInit {
 
   ngOnInit() {
     this.subscriptionAuthService = this.authService.usuario$.subscribe(usuario => {
-      this.usuario = usuario
+      this.usuario = usuario // Se realiza una supscripcion para tener los datos del usuario que se ha logueado
     });
   }
 

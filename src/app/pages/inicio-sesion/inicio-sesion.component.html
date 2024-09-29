@@ -15,26 +15,20 @@
           <ion-input [(ngModel)]="clave" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
         </ion-item>
 
-
         <div class="contenedor-boton">
-
 
           <ion-text color="danger" *ngIf="loginFailed" class="mensaje-error" [ngClass]="{'show': loginFailed}">
             Usuario o clave incorrectos.
           </ion-text>
 
-          <ion-button class="btn-iniciar" color="custom"  (click)="login(correo, clave)" [ngClass]="{'hidden': !loginFailed}" [disabled]="isLoading" >
+          <ion-button class="btn-iniciar" color="custom" (click)="login(correo, clave)"
+            [ngClass]="{'hidden': !loginFailed}" [disabled]="isLoading">
             Iniciar sesión
             <ion-spinner *ngIf="isLoading" slot="end" class="spinner"></ion-spinner>
-
           </ion-button>
-
-
-
 
         </div>
       </ion-card-content>
     </ion-card>
   </div>
-
 </ion-content>
