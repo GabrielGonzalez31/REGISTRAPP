@@ -26,8 +26,8 @@ export const usuarios: Usuario[] = [
     nombreCompleto: 'Andres Saldivar',
     correo: 'andres@duocuc.cl',
     clave: '123456',
-    facultad: 'Salud',
-    carrera: '',
+    facultad: 'Informatica',
+    carrera: 'Ingenieria de Software',
     tipo: 'Docente'
   },
   {
@@ -35,8 +35,8 @@ export const usuarios: Usuario[] = [
     nombreCompleto: 'Gabriel Gonzalez',
     correo: 'gabriel@gmail.com',
     clave: '123456',
-    facultad: 'Informatica y Telecommunicaciones',
-    carrera: 'Analista Programador Computacional',
+    facultad: 'Informatica',
+    carrera: 'Analista Programador',
     tipo: 'Alumno'
   }
 ];
