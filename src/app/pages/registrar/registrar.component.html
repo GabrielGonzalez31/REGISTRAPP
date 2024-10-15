@@ -1,0 +1,54 @@
+<ion-content>
+  <app-header></app-header>
+  <div class="contenedor">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title class="titulo_card">Registro de Usuario</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        <!-- Campo para el nombre completo -->
+        <ion-item>
+          <ion-input [(ngModel)]="nombreCompleto" label="Nombre Completo" labelPlacement="floating"
+            placeholder="Nombre Completo"></ion-input>
+        </ion-item>
+
+        <!-- Campo para el correo -->
+        <ion-item>
+          <ion-input [(ngModel)]="correo" label="Correo" labelPlacement="floating" placeholder="Correo"></ion-input>
+        </ion-item>
+
+        <!-- Campo para la contraseña -->
+        <ion-item>
+          <ion-input [(ngModel)]="clave" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
+        </ion-item>
+
+        <!-- Campo para la ocupación -->
+        <ion-item>
+          <ion-input [(ngModel)]="ocupacion" label="Ocupación" labelPlacement="floating"
+            placeholder="Ocupación"></ion-input>
+        </ion-item>
+
+        <!-- Campo para la carrera -->
+        <ion-item>
+          <ion-input [(ngModel)]="carrera" label="Carrera" labelPlacement="floating" placeholder="Carrera"></ion-input>
+        </ion-item>
+
+        <!-- Campo para la facultad -->
+        <ion-item>
+          <ion-input [(ngModel)]="facultad" label="Facultad" labelPlacement="floating"
+            placeholder="Facultad"></ion-input>
+        </ion-item>
+
+        <!-- Botón para registrar -->
+        <div class="contenedor-boton">
+          <ion-button class="btn-registrar" color="custom" (click)="registrarUsuario()" [disabled]="isLoading">
+            Registrar Usuario
+            <ion-spinner *ngIf="isLoading" slot="end" class="spinner"></ion-spinner>
+          </ion-button>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

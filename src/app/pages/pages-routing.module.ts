@@ -7,9 +7,11 @@ import { DocenteComponent } from './docente/docente.component';
 import { AsignaturasCursosComponent } from './asignaturas-cursos/asignaturas-cursos.component';
 import { CamaraQrComponent } from './camara-qr/camara-qr.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 
 const routes: Routes = [
   {path: '', component: InicioSesionComponent},
+  {path: 'registrar', component: RegistrarComponent},
   {path: 'iniciosesion', component: InicioSesionComponent},
   {path: 'restablecer', component: RestablecerContraComponent},
   {path: 'alumno', component: AlumnoComponent},

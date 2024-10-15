@@ -6,13 +6,14 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { RestablecerContraComponent } from './restablecer-contra/restablecer-contra.component';
 import { IonicModule } from '@ionic/angular';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AlumnoComponent } from './alumno/alumno.component';
 import { DocenteComponent } from './docente/docente.component';
 import { AsignaturasCursosComponent } from './asignaturas-cursos/asignaturas-cursos.component';
 import { CamaraQrComponent } from './camara-qr/camara-qr.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     DocenteComponent,
     AsignaturasCursosComponent,
     CamaraQrComponent,
-    PerfilComponent
+    PerfilComponent,
+    RegistrarComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     SharedModule,
     FormsModule,
     RouterLink,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

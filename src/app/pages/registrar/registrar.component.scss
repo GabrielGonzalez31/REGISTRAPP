@@ -1,0 +1,75 @@
+.contenedor {
+  background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-verde-oscuro_1107-162.jpg?t=st=1727295382~exp=1727298982~hmac=21562aae9c5be022388a39ce5bf00a01a5bee6e682eabe30dea2cbf7b7bb24c8&w=826');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.titulo_card {
+  color: #000000;
+  font-size: bolder;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 15px;
+  width: 350px;
+  padding: 20px;
+  height: auto;
+}
+
+.contenedor-boton {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensaje-error {
+  margin-bottom: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mensaje-error.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-registrar {
+  border-radius: 15px;
+  background-color: #0f5c6b;
+  color: #000000;
+  margin-top: 15px;
+  transition: margin-top 0.5s ease;
+}
+
+.btn-registrar.hidden {
+  margin-top: 0;
+}
+
+.spinner {
+  margin-left: 15px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+ion-item {
+  --background: transparent;
+  --color: rgb(0, 0, 0);
+}
+
+ion-input {
+  color: #000000;
+}
+
