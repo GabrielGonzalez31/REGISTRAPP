@@ -15,6 +15,7 @@ import { CamaraQrComponent } from './camara-qr/camara-qr.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { CierreSesionComponent } from './cierre-sesion/cierre-sesion.component';
+import { QRCodeModule } from 'angularx-qrcode';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { CierreSesionComponent } from './cierre-sesion/cierre-sesion.component';
     FormsModule,
     RouterLink,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    QRCodeModule
   ]
 })
 export class PagesModule { }
