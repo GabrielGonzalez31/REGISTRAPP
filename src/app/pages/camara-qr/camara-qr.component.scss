@@ -1,5 +1,7 @@
 .contenedor {
   background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-verde-oscuro_1107-162.jpg?t=st=1727295382~exp=1727298982~hmac=21562aae9c5be022388a39ce5bf00a01a5bee6e682eabe30dea2cbf7b7bb24c8&w=826');
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -16,24 +18,16 @@
 }
 
 .button-container {
-  margin-top: 50px;
+  margin: 10px 0; /* Espacio entre los botones */
+  text-align: center; /* Centra el texto dentro del botón */
 }
 
-.imgqr{
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
+.qr-container {
+  margin-top: 20px; /* Espacio en la parte superior del QR */
+  display: flex;
+  justify-content: center; /* Asegúrate que el QR esté centrado */
 }
 
-.imgcam{
-  width: 300px;
-  height: 550px;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
 
 
 ion-toolbar {
