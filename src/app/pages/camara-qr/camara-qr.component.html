@@ -1,25 +1,28 @@
 <ion-header>
-  <app-header></app-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+
+    <app-header></app-header>
+  </ion-toolbar>
 </ion-header>
 
-@if (tipo === 'Docente'){
 
-  <!-- Botones para seleccionar asignatura -->
+@if (tipo === 'Docente'){
+<ion-content>
   <div class="contenedor">
 
+    <ion-title class="title">MOSTRANDO QR</ion-title>
 
-    <!-- Botones para seleccionar asignatura -->
-    <div *ngFor="let asignatura of asignaturas">
-      <ion-button (click)="generarQR(asignatura.sigla)">
-        Generar QR de {{asignatura.nombre}}
-      </ion-button>
+    <div class="button-container">
+      <img class="imgqr" src="https://borealtech.com/wp-content/uploads/2018/10/codigo-qr-1024x1024-1.jpg" alt="">
     </div>
 
-    <!-- Mostrar el QR generado -->
-    <div *ngIf="asignaturaQR" class="qr-container">
-      <qrcode [qrdata]="asignaturaQR" [width]="256"></qrcode>
-    </div>
   </div>
+</ion-content>
 }
 
 @if (tipo === 'Alumno'){
