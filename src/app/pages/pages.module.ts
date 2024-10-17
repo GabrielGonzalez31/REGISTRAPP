@@ -14,11 +14,13 @@ import { AsignaturasCursosComponent } from './asignaturas-cursos/asignaturas-cur
 import { CamaraQrComponent } from './camara-qr/camara-qr.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { RegistrarComponent } from './registrar/registrar.component';
+import { CierreSesionComponent } from './cierre-sesion/cierre-sesion.component';
 
 
 @NgModule({
   declarations: [
     InicioSesionComponent,
+    CierreSesionComponent,
     RestablecerContraComponent,
     AlumnoComponent,
     DocenteComponent,

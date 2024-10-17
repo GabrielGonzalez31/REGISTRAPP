@@ -28,8 +28,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
+
 
 .mensaje-error {
   margin-bottom: 10px;
@@ -44,22 +44,31 @@
   transform: translateY(0);
 }
 
-.btn-iniciar {
-
+.btns{
+  --border-radius: px;
   border-radius: 15px;
   background-color: #0f5c6b ;
   color: #ffffff;
   margin-top: 15px;
   transition: margin-top 0.5s ease;
+  flex: 1; /* Hacer que ambos botones ocupen el mismo ancho */
+  margin-right: 5px; /* Espacio entre botones */
 }
 
-.btn-iniciar.hidden {
+.btn-iniciar.hidden{
   margin-top: 0;
 }
 
-
 .spinner{
-
-
   margin-left: 15px;
+}
+
+.texto_card{
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
 }

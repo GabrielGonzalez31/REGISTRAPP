@@ -20,7 +20,17 @@ ion-toolbar{
   color: rgb(255, 255, 255);
 }
 
-.titulo_encabezado{
+/* .titulo_encabezado{
   font-size: 30px;
   height: 100%;
+} */
+
+.bienvenida {
+  color: rgb(255, 255, 255); /* Color del texto de bienvenida */
+  font-size: 20px; /* Ajusta el tamaño según sea necesario */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el desbordamiento */
+  font-size: 20px;
+  height: 100%;
+ /* width: fit-content;*/
 }

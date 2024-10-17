@@ -21,12 +21,17 @@
             Usuario o clave incorrectos.
           </ion-text>
 
-          <ion-button class="btn-iniciar" color="custom" (click)="login(correo, clave)"
-            [ngClass]="{'hidden': !loginFailed}" [disabled]="isLoading">
+          <ion-button class="btns" color="custom" (click)="login(correo, clave)" [ngClass]="{'hidden': !loginFailed}"
+            [disabled]="isLoading">
             Iniciar sesión
             <ion-spinner *ngIf="isLoading" slot="end" class="spinner"></ion-spinner>
           </ion-button>
 
+        </div>
+
+        <div class="texto_card">
+          <ion-text [routerLink]="['/registrar']">No tienes una cuenta aun?</ion-text>
+          <a href="/registrar">Registrate</a>
         </div>
       </ion-card-content>
     </ion-card>

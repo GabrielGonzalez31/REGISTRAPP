@@ -8,11 +8,13 @@ import { AsignaturasCursosComponent } from './asignaturas-cursos/asignaturas-cur
 import { CamaraQrComponent } from './camara-qr/camara-qr.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { RegistrarComponent } from './registrar/registrar.component';
+import { CierreSesionComponent } from './cierre-sesion/cierre-sesion.component';
 
 const routes: Routes = [
   {path: '', component: InicioSesionComponent},
   {path: 'registrar', component: RegistrarComponent},
   {path: 'iniciosesion', component: InicioSesionComponent},
+  {path: 'cierresesion', component: CierreSesionComponent},
   {path: 'restablecer', component: RestablecerContraComponent},
   {path: 'alumno', component: AlumnoComponent},
   {path: 'docente', component: DocenteComponent},

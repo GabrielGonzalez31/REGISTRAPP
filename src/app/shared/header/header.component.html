@@ -1,11 +1,20 @@
-<ion-header class="encabezado">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title class="titulo_encabezado">
-      <span class="registr">EDU</span><span class="app">NEXUS</span>
+@if (usuario){
+  <ion-header class="encabezado">
+    <ion-toolbar>
+      <ion-title class="bienvenida">BIENVENIDO {{usuario}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+}
+@else {
+  <ion-header class="encabezado">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title class="titulo_encabezado">
+        <span class="registr">EDU</span><span class="app">NEXUS</span>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+}
 
-    </ion-title>
-  </ion-toolbar>
-</ion-header>

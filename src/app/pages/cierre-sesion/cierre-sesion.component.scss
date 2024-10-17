@@ -1,0 +1,36 @@
+.contenedor {
+    background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-verde-oscuro_1107-162.jpg?t=st=1727295382~exp=1727298982~hmac=21562aae9c5be022388a39ce5bf00a01a5bee6e682eabe30dea2cbf7b7bb24c8&w=826');
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.title {
+  font-size: 32px; /* Tamaño del título */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white; /* Color del texto */
+  margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.text {
+  h1 {
+    font-size: 24px; /* Tamaño del texto del encabezado */
+    color: white; /* Color del texto */
+    margin: 0; /* Elimina márgenes por defecto */
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  margin-top: 20px; /* Espaciado superior para el botón */
+}
+
+.btns {
+  --color: white; /* Color del texto del botón */
+  --background: #0f5c6b; /* Color de fondo del botón */
+  width: 200px; /* Ancho del botón */
+  font-size: 18px; /* Tamaño de la fuente del botón */
+}

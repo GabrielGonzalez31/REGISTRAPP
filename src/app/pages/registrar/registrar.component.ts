@@ -34,6 +34,8 @@ export class RegistrarComponent { //EXP
 
     // Verificar si el correo ya existe
     const correoExiste = await this.authService.verificarCorreo(this.correo);
+    //Datos de campos del fomulario
+    const campos = [this.nombreCompleto, this.correo, this.clave, this.ocupacion, this.carrera, this.facultad];
     // Crear un objeto usuario con los datos del formulario
     const nuevoUsuario = {
       nombreCompleto: this.nombreCompleto,
@@ -44,15 +46,42 @@ export class RegistrarComponent { //EXP
       facultad: this.facultad,
     };
 
+    //Validacion para que no se cree un usuario vacio
+    if (campos.some(campo => !campo)) {
+      this.isLoading = false;
+      // Mostrar alerta si hay campos vacíos
+      const aviso = await this.alertController.create({
+        header: 'Error',
+        message: 'Todos los campos son obligatorios.',
+        buttons: ['OK'],
+      });
+      await aviso.present();
+      return; // Detener el proceso si hay campos vacíos
+    }
+
+    //Validacion para que ingrese solo docente o alumno
+    const ocupaciones = this.ocupacion.toLowerCase(); //Aca se convierte en minuscula la ocuapcion igresada por el usuario
+    if (ocupaciones !== 'docente' && ocupaciones !== 'alumno') {
+      this.isLoading = false;
+      // Mostrar alerta si hay campos vacíos
+      const aviso = await this.alertController.create({
+        header: 'Error',
+        message: 'La ocupación debe ser Alumno o Docente.',
+        buttons: ['OK'],
+      });
+      await aviso.present();
+      return; // Detener el proceso si hay campos vacíos
+    }
+    //Validacion para saber si ese usuario existe
     if (correoExiste) {
       this.isLoading = false;
       // Mostrar una alerta si el correo ya existe
-      const alert = await this.alertController.create({
+      const aviso = await this.alertController.create({
         header: 'Error',
         message: 'Este correo ya está registrado.',
         buttons: ['OK'],
       });
-      await alert.present();
+      await aviso.present();
       this.limpiarFormulario;
     } else {
       // Proceder con el registro si el correo no existe
@@ -60,12 +89,12 @@ export class RegistrarComponent { //EXP
       this.isLoading = false;
 
       // Mostrar alerta de éxito
-      const alert = await this.alertController.create({
+      const aviso = await this.alertController.create({
         header: 'Registro Exitoso',
         message: 'El usuario ha sido registrado correctamente.',
         buttons: ['OK'],
       });
-      await alert.present();
+      await aviso.present();
       this.limpiarFormulario;
 
       this.router.navigate(['/iniciosesion']); // Redirigir al login

@@ -52,6 +52,7 @@ export class AuthService {
       this.usuarioCompletoSubject.next(user); // Actualizar el usuario completo como objeto del usuario autenticado.
       this.carreraSubject.next(user.carrera); //Actualizar la carrera del usuario encontrado
       this.facultadSubject.next(user.facultad); //Actualizar la facultad del usuario encontrado
+      this.tipoSubject.next(user.ocupacion); //Actualizar el tipo de usuario encontrado
       this.loginFailedSubject.next(false); // Restablecer loginFailed a false
     } else {
       this.isAuthenticatedSubject.next(false); // Desactivar el estado de autenticación si la autenticación es incorrecta.

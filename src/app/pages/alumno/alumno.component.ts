@@ -15,11 +15,10 @@ export class AlumnoComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.subscripcionDatosUsuario = this.datosUsuario.usuario$.subscribe(datosUsuario => {
       this.nombre = datosUsuario;
     });
-    this.datosUsuario.logout();
   }
 
 }

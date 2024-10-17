@@ -34,3 +34,17 @@
   display: block;
   margin: 0 auto;
 }
+
+
+ion-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+app-header {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white; /* Ajusta este valor al color que prefieras */
+}
